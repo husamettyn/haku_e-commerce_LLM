@@ -1,0 +1,12 @@
+transformers
+bitsandbytes
+gradio
+pillow-avif-plugin
+Pillow
+huggingface_hub
+torch
+requests
+skimage
+shutil
+json
+urllib3
