@@ -33,7 +33,10 @@ Project pipeline is mentioned above.
 
 ## Example Results
 * El işi çocuk kazak
-![kazak](assets/kazak.jpg)
+![cocuk_kazak](assets/kazak.jpg)
+
+* Kelebek desenli parıltılı çanta
+![desenli_canta](assets/canta.jpg)
 
 ## Setup Instructions
 
@@ -100,6 +103,9 @@ Projeye ait pipeline yukarıda gösterilmiştir.
 ## Örnek Sonuçlar
 * El işi çocuk kazak
 ![kazak](assets/kazak.jpg)
+
+* Kelebek desenli parıltılı çanta
+![desenli_canta](assets/canta.jpg)
 
 ## Kurulum Talimatları
 
