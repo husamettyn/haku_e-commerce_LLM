@@ -1,4 +1,4 @@
----
+EN
 
 # HAKU e-Commerce Product Description Generator
 
@@ -53,3 +53,66 @@ In this project, the “Meta-LLaMA 3.2 Vision-Instruct” LLM model is used as t
 - **GPU recommended:** This model requires significant memory. It is highly recommended to run it on a machine with a GPU.
 - **Model weights:** Make sure to load the model correctly using Hugging Face's API.
 - **Error handling:** If you encounter errors with `tie_weights`, make sure you tie model weights using the respective method before running inference.
+
+
+---
+
+TR
+
+# HAKU e-Ticaret Ürün Açıklaması Oluşturucu
+
+Bu proje, Türkiye Teknoloji Takımı ve Trendyol tarafından düzenlenen e-Ticaret Hackathonu kapsamında geliştirilmiştir. Proje, merkezinde e-ticaret platformlarında satış yapabilmek için gerekli olan metin yazarlığı ve profesyonel ürün çekimi maliyetlerine ucuz ve erişilebilir çözümler sunarak kırsal kesimde yaşayan satıcılar için fırsat eşitsizliğini dengelemeyi amaçlamaktadır. Bu kapsamda proje, kullanıcıdan alınan amatör ürün görseli ve kısa açıklama üzerinde LLM ve Computer Vision gibi teknolojilerden yararlanarak bu soruna çözüm üretmektedir.
+
+Bu projede temel olarak “Meta-LLaMA 3.2 Vision-Instruct” LLM modeli kullanılmaktadır. Bu model doğal dil işlemenin yanı sıra bilgisayarla görme yeteneklerine de sahiptir ve verimli ve kullanışlı olduğu için seçilmiştir. Görüntüdeki perspektif kaymalarından kaynaklanan bozulmalar Hough Çizgileri gibi çeşitli görüntü işleme algoritmaları kullanılarak düzeltilmiştir. Kullanıcıdan alınan görüntünün daha profesyonel görünmesi için görüntüdeki özneye arka plan değiştirme işlemi uygulanmış, bunun için de çeşitli Diffussion modellerinin kullanımı için kullanım kolaylığı sağlayan ComfyUI tercih edilmiştir. Ayrıca bu projede hem frontend hem de backend servisleri için Gradio kullanılmıştır.
+
+
+## Özellikler
+
+- **Model:** Meta LLaMA 3.2 - 11B Vision Instruct model
+- **Kullanılan kütüphaneler:**
+  - Hugging Face tarafından `transformers`
+  - derin öğrenme çerçevesi için `torch`
+  - için `Gradio` 
+- İşlevsellik:**
+  - Kullanıcının verdiği resim girdilerinden ve ürün bilgilerinden metin tabanlı açıklamalar oluşturun.
+  - Diffusing modellerini kullanarak süslü arka planlar oluşturun.
+  - Oluşturulan ürün açıklamaları hakkında kullanıcıdan geri bildirim alın ve revize edin.
+
+## Kurulum Talimatları
+
+1. **Depoyu klonlayın:**
+
+   ``bash
+   git clone <repository-url>
+   ```
+
+2. **Bağımlılıkları yükleyin:**
+   
+   Python 3.x'in kurulu olduğundan emin olun. Daha sonra aşağıdaki komut ile gerekli paketleri yükleyin:
+
+   ``bash
+   pip install -r requirements.txt
+   ```
+
+## Kullanım
+
+1. **Huggingface Giriş Belirteçinizi sağlayın:**
+   ```
+   from huggingface_hub import login
+   login(“YOUR_LOGIN_TOKEN_HERE”)
+   ```
+2. **Defteri uçtan uca çalıştırın**
+   Bunu notebook ortamınızdaki “Çalıştır” menüsünden kısaca yapabilirsiniz
+
+3. **Gradio tarafından sağlanan web sitesine gidin**
+   Tüm kod bloklarının yürütülmesinden sonra Gradio, web arayüzü aracılığıyla projeye erişebileceğiniz genel bir URL sağlar. Bu arayüzü kullanarak projeyi kolayca kullanabilirsiniz.
+
+## Notlar
+
+- **GPU önerilir:** Bu model önemli miktarda bellek gerektirir. GPU'lu bir makinede çalıştırılması şiddetle tavsiye edilir.
+- **Model ağırlıkları:** Hugging Face'in API'sini kullanarak modeli doğru şekilde yüklediğinizden emin olun.
+- Hata işleme:** `tie_weights` ile ilgili hatalarla karşılaşırsanız, çıkarımı çalıştırmadan önce ilgili yöntemi kullanarak model ağırlıklarını bağladığınızdan emin olun.
+
+
+---
+
