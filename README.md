@@ -23,6 +23,10 @@ Project pipeline is mentioned above.
   - Generate fancy backgrounds using Diffusing models.
   - Take feedback from user about generated product descriptions and revise it.
 
+## Example Results
+* El işi çocuk kazak
+![kazak](assets/kazak.jpg)
+
 ## Setup Instructions
 
 1. **Clone the repository:**
@@ -84,6 +88,10 @@ Projeye ait pipeline yukarıda gösterilmiştir.
   - Kullanıcının verdiği resim girdilerinden ve ürün bilgilerinden metin tabanlı açıklamalar oluşturun.
   - Diffusing modellerini kullanarak dikkat çekici arka planlar oluşturun.
   - Oluşturulan ürün açıklamaları hakkında kullanıcıdan geri bildirim alın ve revize edin.
+
+## Örnek Sonuçlar
+* El işi çocuk kazak
+![kazak](assets/kazak.jpg)
 
 ## Kurulum Talimatları
 
