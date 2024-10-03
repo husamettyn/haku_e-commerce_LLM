@@ -1,10 +1,14 @@
-EN
+# **English**
+
+![Project Pipeline](assets/pipeline.jpg)
 
 # HAKU e-Commerce Product Description Generator
 
 This project was realized as part of the e-Commerce Hackathon organized by the Turkish Technology Team and Trendyol. The project aims to balance the inequality of opportunity for sellers living in rural areas by providing inexpensive and accessible solutions to the costs of copywriting and professional product shooting required to sell on e-commerce platforms. In this context, the project provides a solution to this problem by utilizing technologies such as LLM and Computer Vision on the amateur product image and short description received from the user.
 
 In this project, the “Meta-LLaMA 3.2 Vision-Instruct” LLM model is used as the basis. This model has natural language processing as well as computer vision capabilities and was chosen because it is efficient and useful. Distortions caused by perspective shifts in the image were corrected by using various image processing algorithms such as Hough Lines. In order to make the image received from the user look more professional, a background replacement process was applied to the subject in the image, for which ComfyUI, which provides ease of use for the use of various Diffussion models, was preferred. Addiniotally, Gradio is used in this project for both frontend and backend services.
+
+Project pipeline is mentioned above.
 
 
 ## Features
@@ -57,7 +61,9 @@ In this project, the “Meta-LLaMA 3.2 Vision-Instruct” LLM model is used as t
 
 ---
 
-TR
+# **Türkçe**
+
+![Project Pipeline](assets/pipeline.jpg)
 
 # HAKU e-Ticaret Ürün Açıklaması Oluşturucu
 
@@ -65,6 +71,7 @@ Bu proje, Türkiye Teknoloji Takımı ve Trendyol tarafından düzenlenen e-Tica
 
 Bu projede temel olarak “Meta-LLaMA 3.2 Vision-Instruct” LLM modeli kullanılmaktadır. Bu model doğal dil işlemenin yanı sıra bilgisayarla görme yeteneklerine de sahiptir ve verimli ve kullanışlı olduğu için seçilmiştir. Görüntüdeki perspektif kaymalarından kaynaklanan bozulmalar Hough Çizgileri gibi çeşitli görüntü işleme algoritmaları kullanılarak düzeltilmiştir. Kullanıcıdan alınan görüntünün daha profesyonel görünmesi için görüntüdeki özneye arka plan değiştirme işlemi uygulanmış, bunun için de çeşitli Diffussion modellerinin kullanımı için kullanım kolaylığı sağlayan ComfyUI tercih edilmiştir. Ayrıca bu projede hem frontend hem de backend servisleri için Gradio kullanılmıştır.
 
+Projeye ait pipeline yukarıda gösterilmiştir.
 
 ## Özellikler
 
@@ -73,16 +80,16 @@ Bu projede temel olarak “Meta-LLaMA 3.2 Vision-Instruct” LLM modeli kullanı
   - Hugging Face tarafından `transformers`
   - derin öğrenme çerçevesi için `torch`
   - için `Gradio` 
-- İşlevsellik:**
+- **İşlevsellik:**
   - Kullanıcının verdiği resim girdilerinden ve ürün bilgilerinden metin tabanlı açıklamalar oluşturun.
-  - Diffusing modellerini kullanarak süslü arka planlar oluşturun.
+  - Diffusing modellerini kullanarak dikkat çekici arka planlar oluşturun.
   - Oluşturulan ürün açıklamaları hakkında kullanıcıdan geri bildirim alın ve revize edin.
 
 ## Kurulum Talimatları
 
 1. **Depoyu klonlayın:**
 
-   ``bash
+   ```bash
    git clone <repository-url>
    ```
 
@@ -90,18 +97,18 @@ Bu projede temel olarak “Meta-LLaMA 3.2 Vision-Instruct” LLM modeli kullanı
    
    Python 3.x'in kurulu olduğundan emin olun. Daha sonra aşağıdaki komut ile gerekli paketleri yükleyin:
 
-   ``bash
+   ```bash
    pip install -r requirements.txt
    ```
 
 ## Kullanım
 
-1. **Huggingface Giriş Belirteçinizi sağlayın:**
+1. **Huggingface Giriş tokenini sağlayın:**
    ```
    from huggingface_hub import login
    login(“YOUR_LOGIN_TOKEN_HERE”)
    ```
-2. **Defteri uçtan uca çalıştırın**
+2. **Not defterindeki kod bloklarını baştan sona yürütün**
    Bunu notebook ortamınızdaki “Çalıştır” menüsünden kısaca yapabilirsiniz
 
 3. **Gradio tarafından sağlanan web sitesine gidin**
