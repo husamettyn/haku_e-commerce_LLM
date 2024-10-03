@@ -1,3 +1,5 @@
+![Project Banner](img/banner.png)
+---
 EN
 
 # HAKU e-Commerce Product Description Generator
