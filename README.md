@@ -1,3 +1,11 @@
+## PROJECT TEAM
+
+**Kaan Baturalp COŞDAN (Takım Kaptanı)**
+
+**Turabi YILDIRIM (Üye)**
+
+**Hüsamettin IŞIKTAŞ (Üye)**
+
 # **English**
 
 ![Project Pipeline](assets/pipeline.jpg)
